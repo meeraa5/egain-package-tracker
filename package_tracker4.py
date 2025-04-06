@@ -47,9 +47,9 @@ def print_title():
 def print_bot_message(message):
     """Print a message from the bot"""
     if COLORAMA_AVAILABLE:
-        print(f"\n{Fore.MAGENTA}🤖 {message}{Style.RESET_ALL}")
+        print(f"\n{Fore.MAGENTA} {message}{Style.RESET_ALL}")
     else:
-        print(f"\n🤖 {message}")
+        print(f"\n {message}")
 
 def print_options(options):
     """Print menu options"""
@@ -65,9 +65,9 @@ def print_options(options):
 def get_user_input():
     """Get input from the user"""
     if COLORAMA_AVAILABLE:
-        return input(f"\n{Fore.MAGENTA}👤 {Style.RESET_ALL}")
+        return input(f"\n{Fore.MAGENTA} {Style.RESET_ALL}")
     else:
-        return input("\n👤 ")
+        return input("\n ")
 
 def main():
     """Main function to run the chatbot"""
