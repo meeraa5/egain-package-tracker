@@ -23,7 +23,7 @@ Install colorama (optional but recommended for the best experience):
 Copy pip install colorama
 
 Run the chatbot:
-Copy package_tracker4.py
+Copy python package_tracker4.py
 
 
 Features:
