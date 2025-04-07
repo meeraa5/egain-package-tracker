@@ -11,6 +11,7 @@ try:
     init()
     COLORAMA_AVAILABLE = True
 except ImportError:
+    # Graceful degradation if colorama is not installed
     print("Note: For colored output, install colorama: pip install colorama")
     COLORAMA_AVAILABLE = False
 
