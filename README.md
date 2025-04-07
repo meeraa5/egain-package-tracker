@@ -55,6 +55,8 @@ The chatbot implements two main error handling mechanisms:
 Invalid Menu Selection: When a user selects an option that doesn't exist, they receive a clear error message and are prompted to try again.
 Invalid Tracking Number: When a tracking number isn't recognized, the chatbot provides examples of valid numbers and continues the conversation.
 These error handling approaches ensure a smooth user experience even when unexpected inputs are provided.
+
+When a user enters an option that isn't available (such as typing "6" when only options 1-4 are available), the chatbot:
 ![image](https://github.com/user-attachments/assets/b723c353-1341-4183-b443-75c4f5e82d20)
 
 
