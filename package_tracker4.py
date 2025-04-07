@@ -77,6 +77,7 @@ def main():
     print_bot_message(f"Welcome to the eGain Package Tracking Assistant!")
     
     while True:
+        # Display main menu options
         print_bot_message("What would you like to do today?")
         print_options([
             "Track a package", 
@@ -86,7 +87,8 @@ def main():
         ])
         
         choice = get_user_input()
-        
+
+         # Process user selection
         if choice == "1":
             track_package()
         elif choice == "2":
@@ -94,9 +96,11 @@ def main():
         elif choice == "3":
             handle_delivery_problem()
         elif choice == "4" or choice.lower() in ["exit", "quit", "bye"]:
+            # Handle exit command with friendly goodbye
             print_bot_message("Thank you for using the eGain Package Tracker. Goodbye!")
             break
         else:
+             # Error handling for invalid menu selections
             if COLORAMA_AVAILABLE:
                 print_bot_message(f"{Fore.RED}Please select a valid option (1-4).{Style.RESET_ALL}")
             else:
@@ -107,12 +111,15 @@ def main():
 def track_package():
     """Handle package tracking"""
     print_bot_message("Please enter your tracking number:")
-    
+
+    # Convert input to uppercase and remove spaces for consistent formatting
     tracking_number = get_user_input().upper().replace(" ", "")
     
     if tracking_number in PACKAGES:
+        # Display tracking information for valid tracking numbers
         print_bot_message(PACKAGES[tracking_number])
     else:
+        # Provide helpful guidance when tracking number isn't found
         invalid_message = "Tracking number not found. For this demo, I can only track these numbers: "
         if COLORAMA_AVAILABLE:
             print_bot_message(f"{invalid_message}{Fore.MAGENTA}TN123456789US, 987654321098, ER123456789CH{Style.RESET_ALL}")
