@@ -1,7 +1,6 @@
-![screenshot4](https://github.com/user-attachments/assets/ebfa5c7a-d4fb-409c-9236-6bd493e9e381)eGain Package Tracking Chatbot
+eGain Package Tracking Chatbot
 
 A command-line chatbot for tracking packages, reporting lost items, and resolving delivery issues. Created for the eGain internship assignment.
-
 
 Overview:
 This Python-based chatbot demonstrates a simple, effective conversation flow for package tracking customer service. It's styled with eGain's official magenta/black branding and designed to handle three main scenarios:
@@ -39,6 +38,9 @@ Main menu with 4 clearly defined options
 Each option leads to a specific, self-contained process
 When the process completes, control returns to the main menu
 Clear exit option available at any time
+
+Here's a flowchart showing the conversation paths in the chatbot:
+![flowchart](https://github.com/user-attachments/assets/5b350f8c-5cdf-4482-bff4-6298c1c5e19c)
 
 
 Sample Tracking Numbers:
