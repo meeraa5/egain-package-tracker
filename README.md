@@ -65,7 +65,6 @@ Screenshots:
 ![screenshot2](https://github.com/user-attachments/assets/bc6fd354-1b77-4700-baae-e70e6eb42234)
 ![screenshot3](https://github.com/user-attachments/assets/b0fc2150-2113-4e1e-af35-716db2309b84)
 ![screenshot4](https://github.com/user-attachments/assets/dc64dd7f-2085-459f-8396-4beb2cd63b83)
-![screenshot5](https://github.com/user-attachments/assets/6306ad22-dfa2-4c7b-958b-5e2bcc82ad15)
 
 
 Design Approach:
