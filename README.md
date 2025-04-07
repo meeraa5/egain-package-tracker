@@ -1,4 +1,4 @@
-eGain Package Tracking Chatbot
+![screenshot4](https://github.com/user-attachments/assets/ebfa5c7a-d4fb-409c-9236-6bd493e9e381)eGain Package Tracking Chatbot
 
 A command-line chatbot for tracking packages, reporting lost items, and resolving delivery issues. Created for the eGain internship assignment.
 
@@ -8,7 +8,6 @@ This Python-based chatbot demonstrates a simple, effective conversation flow for
 Tracking a package with a tracking number
 Reporting a lost package
 Resolving delivery problems
-
 
 Installation:
 Requirements:
@@ -54,6 +53,13 @@ The chatbot implements two main error handling mechanisms:
 Invalid Menu Selection: When a user selects an option that doesn't exist, they receive a clear error message and are prompted to try again.
 Invalid Tracking Number: When a tracking number isn't recognized, the chatbot provides examples of valid numbers and continues the conversation.
 These error handling approaches ensure a smooth user experience even when unexpected inputs are provided.
+
+Screenshots:
+![screenshot1](https://github.com/user-attachments/assets/1dda840d-037a-4d92-81b5-f8477f42d548)
+![screenshot2](https://github.com/user-attachments/assets/bc6fd354-1b77-4700-baae-e70e6eb42234)
+![screenshot3](https://github.com/user-attachments/assets/b0fc2150-2113-4e1e-af35-716db2309b84)
+![screenshot4](https://github.com/user-attachments/assets/dc64dd7f-2085-459f-8396-4beb2cd63b83)
+![screenshot5](https://github.com/user-attachments/assets/6306ad22-dfa2-4c7b-958b-5e2bcc82ad15)
 
 
 Design Approach:
