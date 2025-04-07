@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Fixed eGain Package Tracking Chatbot
-eGain Internship Assignment
+eGain Package Tracking Chatbot
+Internship Assignment
 """
 
 import sys
@@ -14,7 +14,7 @@ except ImportError:
     print("Note: For colored output, install colorama: pip install colorama")
     COLORAMA_AVAILABLE = False
 
-# Sample package data
+# The PACKAGES dictionary contains sample tracking data for demonstration purposes
 PACKAGES = {
     "TN123456789US": "Your package is in transit. Last location: Denver, CO. Expected delivery: April 6, 2023.",
     "987654321098": "Your package is delayed due to weather. Current location: Chicago, IL. New delivery: April 8, 2023.",
@@ -69,6 +69,8 @@ def get_user_input():
     else:
         return input("\n ")
 
+# Main function for the chatbot
+# Displays welcome message, main menu, and handles primary navigation
 def main():
     """Main function to run the chatbot"""
     print_title()
@@ -100,6 +102,8 @@ def main():
             else:
                 print_bot_message("Please select a valid option (1-4).")
 
+# Handles the package tracking workflow
+# Asks for tracking number, validates it, displays status, and offers alerts
 def track_package():
     """Handle package tracking"""
     print_bot_message("Please enter your tracking number:")
@@ -128,6 +132,8 @@ def track_package():
     else:
         print_bot_message("No problem. No alerts will be set up.")
 
+# Handles the lost package reporting workflow
+# Determines if package is eligible for claim based on time since expected delivery
 def handle_lost_package():
     """Handle lost package reporting"""
     print_bot_message("I'm sorry to hear your package may be lost.")
@@ -144,6 +150,8 @@ def handle_lost_package():
     else:
         print_bot_message("Please wait a few more days. The package might still be in transit.")
 
+# Handles delivery problem resolution
+# Offers options for redelivery or replacement
 def handle_delivery_problem():
     """Handle delivery problems"""
     print_bot_message("I'm sorry you're having a delivery problem.")
